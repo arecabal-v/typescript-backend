@@ -1,7 +1,7 @@
-import { Character } from '../../domain/class/Character';
-import { CharacterId } from '../../domain/class/CharacterId';
-import { CharacterName } from '../../domain/class/CharacterName';
-import { CharacterRepository } from '../../domain/contract/CharacterRepository';
+import { Character } from '@context/star-wars/shared/domain/class/Character';
+import { CharacterId } from '@context/star-wars/shared/domain/class/CharacterId';
+import { CharacterName } from '@context/star-wars/shared/domain/class/CharacterName';
+import {CharacterRepository} from '@context/star-wars/character/domain/contract/CharacterRepository';
 
 export class CharacterCreator {
   constructor(private characterRepository: CharacterRepository) {}

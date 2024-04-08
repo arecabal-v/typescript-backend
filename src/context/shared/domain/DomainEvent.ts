@@ -28,4 +28,4 @@ export type DomainEventClass = {
   fromPrimitives(params: { aggregateId: string; eventId: string; maxRetries: number; occurredOn: Date; attributes: DomainEventAttributes; }): DomainEvent;
 };
 
-type DomainEventAttributes = any;
+export type DomainEventAttributes = any;

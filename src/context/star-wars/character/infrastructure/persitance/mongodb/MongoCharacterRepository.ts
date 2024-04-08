@@ -1,6 +1,6 @@
 import { NotFoundError } from '@context/shared/domain/errors/NotFoundError';
 import { MongoRepository } from '@context/shared/infrastructure/persistance/mongo/MongoRepository';
-import { Character } from '@context/star-wars/character/domain/class/Character';
+import { Character } from '@context/star-wars/shared/domain/class/Character';
 import { CharacterRepository } from '@context/star-wars/character/domain/contract/CharacterRepository';
 
 export class MongoCharacterRepository extends MongoRepository<Character> implements CharacterRepository {
@@ -20,3 +20,4 @@ export class MongoCharacterRepository extends MongoRepository<Character> impleme
     return 'character'
   }
 }
+

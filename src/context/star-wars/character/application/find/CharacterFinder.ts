@@ -1,5 +1,5 @@
-import { Character } from '../../domain/class/Character';
-import { CharacterId } from '../../domain/class/CharacterId';
+import { Character } from '@context/star-wars/shared/domain/class/Character';
+import { CharacterId } from '@context/star-wars/shared/domain/class/CharacterId';
 import { CharacterRepository } from '../../domain/contract/CharacterRepository';
 
 export class CharacterFinder {
