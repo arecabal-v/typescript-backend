@@ -2,8 +2,8 @@ import { CommandHandler } from '@context/shared/domain/cqrs/CommandHandler';
 import { CreateCharacterCommand } from '../../domain/CreateCharacterCommand';
 import { Command } from '@context/shared/domain/cqrs/Command';
 import { CharacterCreator } from './CharacterCreator';
-import { CharacterId } from '../../domain/class/CharacterId';
-import { CharacterName } from '../../domain/class/CharacterName';
+import { CharacterId } from '@context/star-wars/shared/domain/class/CharacterId';
+import { CharacterName } from '@context/star-wars/shared/domain/class/CharacterName';
 
 export class CreateCharacterCommandHandler implements CommandHandler<CreateCharacterCommand> {
   constructor(private characterUpdater: CharacterCreator) {}
